@@ -1,9 +1,58 @@
-For this project I built a smart thermostat system using the Raspberry Pi. The purpose of the project is to have a system that can read the current temperature from a sensor attached to the Raspberry Pi and then control the heating or cooling based on the set point that the user can adjust with the relevant buttons. It also uses LED to show the current state, at heat set point, cooling to set point, etc. There is also an LCD screen that displays relevant data to the user, current date and time, current temperature, current state, and the set point of the temperature. It also uses UART communication to simulate sending data to a server.
+# CS-350 Embedded Systems Thermostat Project
 
-During this project, I felt putting the components together was done well. I initially thought I messed it up somewhere but ended up being a different issue all together. Taking note of the pin-to-pin connections was vital for this project, instead of going of the breadboard directions as they seemed to differ greatly in design. 
+## Project Overview
 
-One area I think I could improve on is troubleshooting. I had a huge issue with the LCD screen not working. I thought it was the connections at one point; at another point I thought maybe there was something wrong with the screen all together. It ended up just being my lack of understanding of the device as I had not fully inserted the ribbon cable into the breadboard even though I thought I had it in properly and securely. Going through from the very beginning might have helped in this situation.
+This project involved designing and developing a smart thermostat prototype using a Raspberry Pi and embedded systems concepts. The system reads live temperature data from a connected sensor and automatically controls heating and cooling behavior based on a configurable temperature set point.
 
-During this project I learned of many new tools and resources that helped me along. Many were official documentation for the Raspberry Pi as well as some online forums that ended up being pretty useful, Stack Overflow was one that I used a few times though it didn't have the answers I was looking for at the time. Looking at other examples and projects also helped, I went to YouTube and found someone making something somewhat similar connection wise.
+## The thermostat includes:
+- LCD display for system information
+- Temperature sensor integration
+- Button-controlled temperature adjustment
+- LED state indicators
+- UART communication simulation
+- Real-time date and time display
 
-From this project I learned many things that will help me in future classes and with my career, the most important, I believe, would be how software and hardware can make connections and how to work with embedded systems that seem to be becoming increasingly prominent in society. I also learned a lot more about debugging and troubleshooting as that was my biggest issue in this project. As soon as I figured the problem out it was basically done.
+The project demonstrates hardware/software integration, embedded programming, state-machine logic, debugging, and low-level system interaction.
+
+## Technologies & Components Used
+- Raspberry Pi
+- Python / Embedded Programming
+- GPIO
+- UART Communication
+- LCD Display
+- Temperature Sensor
+- LEDs & Push Buttons
+- State Machine Logic
+  
+## Features
+- Reads and displays live temperature data
+- Allows users to adjust thermostat set point
+- Simulates heating and cooling states
+- Uses LEDs to visually indicate system state
+- Displays system status and temperature information on LCD screen
+- Simulates sending system data through UART communication
+  
+## Challenges & Debugging
+
+One of the largest challenges during development involved troubleshooting the LCD display connection. Initially, the issue appeared to be related to software configuration or incorrect wiring. After extensive debugging and hardware verification, the problem was identified as an improperly seated ribbon cable connection.
+
+This experience reinforced the importance of:
+- systematic troubleshooting
+- validating hardware connections
+- debugging step-by-step
+- carefully reviewing physical component setup
+
+The project also emphasized the importance of accurate GPIO pin mapping and careful hardware assembly when working with embedded systems.
+
+## What I Learned
+
+Through this project I gained practical experience with embedded systems development and hardware/software integration. I improved my understanding of:
+
+- real-time embedded programming
+- GPIO and UART communication
+- hardware debugging
+- system state management
+- sensor interaction
+- troubleshooting physical hardware issues
+
+This project also strengthened my understanding of how embedded systems are used in real-world applications and how software interacts directly with hardware components.
